@@ -49,7 +49,7 @@ app.use('/users', router.post('/', json(), async(req, res) => {
     return res.sendStatus(200);
 }));
 
-// Verify accout
+// Verify account
 app.use('/account-verification', router.post('/:token', json(), async(req, res) => {
     const { token } = req.params
     // Check if an account with this token exists
