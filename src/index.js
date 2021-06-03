@@ -7,7 +7,7 @@ const cors = require('cors');
 const bcryptjs = require('bcryptjs');
 const crypto = require('crypto');
 const validator = require('validator');
-const sendVerificationLink = require('./sendgrid');
+const sendVerificationLink = require('../sendgrid');
 const {
   findAccountByEmail,
   findAccountByVerificationToken,
