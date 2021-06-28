@@ -1,0 +1,16 @@
+type getUser {
+    id: ID
+    fname: String
+    lname: String
+    email: String
+}
+
+type Query {
+    users: [getUser]
+}
+
+type Mutation {
+    createUser(email: String, fname: String, 
+    lname: String, password: String): Int,
+    updateUser(email_verified: Boolean, token: String): Int
+}

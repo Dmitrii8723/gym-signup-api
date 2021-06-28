@@ -12,5 +12,5 @@ until docker run --rm -it --network $NETWORK postgis/postgis:13-3.1-alpine psql 
   do echo "Wait for PSQL"
   sleep 1
 done
-docker exec -u postgres $CONTAINER createuser -s --no-password admin
+docker exec -u postgres $CONTAINER createuser -s --no-password dmitrii
 echo Creating DB
